@@ -38,7 +38,7 @@
 
 #include <WiFi.h>
 
-const char *ssid = "Wokwi-GUEST";
+const char *ssid = "";
 const char *password = "";
 
 // WARNING: This function is called from a separate FreeRTOS task (thread)!
@@ -143,4 +143,5 @@ void setup() {
 
 void loop() {
   delay(1000);
+  Serial.println("test");
 }
